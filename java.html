@@ -7,11 +7,30 @@
 <body>
 
   <script>
+
+let rock = "rock"
+let paper = "paper"
+let scissors ="scissors"
+
+let computerChoice = computerPlay
   
 var randomNumber = Math.floor(Math.random() * 3) + 1;
   
-console.log("random number is " + randomNumber)
+function computerPlay() {
 
+    if (randomNumber == 2)
+    computerChoice = rock 
+  
+    else if (randomNumber < 2)
+    computerChoice = paper
+  
+    else (randomNumber => 3)
+    computerChoice = scissors
+}
+
+computerPlay()
+
+console.log("computer draws " + computerChoice )
   </script>
 
 </body>
