@@ -19,3 +19,24 @@ body {
     text-align: center;
     text-decoration: underline;
 }
+
+.player-selection {
+    margin: 100px auto;
+    border: 2px solid black;
+    width: 60%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.radio-buttons {
+    font-weight: bold;
+    font-size: 8vh
+    
+}
+
+.option-buttons {
+    display: inline-flex;
+    align-items: center;
+}
+
