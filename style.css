@@ -1,5 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Ramabhadra&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: azure;
-    margin: none;
-    padding: none;
+    background-color: cadetblue;
+    font-family: 'Ramabhadra', sans-serif;
+
+}
+.title-div {
+    background-color: cadetblue;
+}
+
+.title-div > h1 {
+    text-align: center;
+    text-decoration: underline;
 }
