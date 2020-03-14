@@ -14,36 +14,41 @@
         <div class="select-text">
         <p>Select your play:</p>
         </div>
-
-        <div class="player-selection">
-            
-            <form name="player-selection">
+         
                 <div class="radio-buttons">
+
+                <form>
                     
                     <label class="option-buttons" for="rock">
-                    <input id="rock" value="rock" type="radio" name="player-selection" checked="checked"> Rock    
+
+                    <input id="rock" value="rock" type="radio" name="userPlay">
+                    Rock
                     </label>
                     
                     
                     <label class="option-buttons" for="paper">
-                    <input id="paper" value="paper" type="radio" name="player-selection"> Paper 
+
+                    <input id="paper" value="paper" type="radio" name="userPlay" checked="checked">
+                    Paper 
                     </label>
                     
                     
                     <label class="option-buttons" for="scissors">
-                    <input id="scissors" value="scissors" type="radio" name="player-selection"> Scissors
+
+                    <input id="scissors" value="scissors" type="radio" name="userPlay"> 
+                    Scissors
                     </label>
                     
-                    </div>
+                </div>
             
-        </div>
+        
 
-        <div class="submit-button">
-            <p>
-                <button id="submit" type="submit">Submit</button>
-            </p>
-            </form>
-        </div>
+                <div class="submit-button">
+            
+                <p><button onclick="myFunction" id="submit" type="submit">Play</button></p>
+                    
+                </form>
+                </div>
 
         <script src="app.js"></script>
     </body>

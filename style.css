@@ -22,18 +22,16 @@ body {
     font-size: 10vh;
 }
 
-.player-selection {
-    margin: 50px auto;
-    display: flex;
-    justify-content: center;
-}
 
 .radio-buttons {
+    width: 60%;
     font-weight: bold;
     font-size: 8vh;
     border: 2px solid black;
     border-radius: 15px;
-  
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .option-buttons {
@@ -50,3 +48,4 @@ body {
 .submit-button {
     text-align: center;
 }
+
