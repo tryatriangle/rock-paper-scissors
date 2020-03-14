@@ -8,3 +8,9 @@ function computerPlay() {
   }
   
  console.log(computerPlay());
+
+ function displayUserChoice() { 
+  var ele = document.getElementsByName("player-selection"); 
+ }
+
+ alert(displayUserChoice());
