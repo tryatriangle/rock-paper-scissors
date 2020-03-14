@@ -13,26 +13,27 @@ body {
 }
 .title-div {
     background-color: cadetblue;
+    margin-bottom: 100px;
 }
 
 .title-div > h1 {
     text-align: center;
     text-decoration: underline;
+    font-size: 10vh;
 }
 
 .player-selection {
-    margin: 100px auto;
-    border: 2px solid black;
-    width: 60%;
-    border-radius: 15px;
+    margin: 50px auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .radio-buttons {
     font-weight: bold;
-    font-size: 8vh
-    
+    font-size: 8vh;
+    border: 2px solid black;
+    border-radius: 15px;
+  
 }
 
 .option-buttons {
@@ -40,3 +41,12 @@ body {
     align-items: center;
 }
 
+.select-text {
+    background-color: white;
+    text-align: center;
+    font-size: 5vh;;
+}
+
+.submit-button {
+    text-align: center;
+}
