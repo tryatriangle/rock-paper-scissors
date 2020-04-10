@@ -1,6 +1,9 @@
 let rockDiv = document.getElementById("button-rock");
 let paperDiv = document.getElementById("button-paper");
-let scissorsDiv = document.getElementById("button-scissors")
+let scissorsDiv = document.getElementById("button-scissors");
+let userScore_span = document.getElementById("user-score");
+let computerScore_span = document.getElementById("computer-score");
+
 
 let userScore = 0;
 let computerScore = 0;

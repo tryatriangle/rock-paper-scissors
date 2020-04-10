@@ -59,4 +59,14 @@ body {
 
     background-color: pink;
 }
+.score-board {
+    font-size: 9vh;
+    width: 10vw;
+    margin: auto;
+
+    border: 5px solid black;
+    border-radius: 15px;
+
+    text-align: center;
+}
 
