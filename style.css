@@ -9,7 +9,6 @@
 body {
     background-color: cadetblue;
     font-family: 'Baloo Paaji 2', cursive;
-
 }
 .title-div {
     background-color: cadetblue;
@@ -20,8 +19,11 @@ body {
     text-align: center;
     font-size: 10vh;
 }
-
-
+.select-text {
+    background-color: white;
+    text-align: center;
+    font-size: 5vh;
+}
 .button-menu {
     width: 60%;
     font-weight: bold;
@@ -31,8 +33,8 @@ body {
     justify-content: space-between;
 }
 #button-rock{
-    display: inline-flex;
-    align-items: center;
+    text-align: center;
+    
     border: 5px solid black;
     border-radius: 15px;
     width: 33%;
@@ -40,8 +42,8 @@ body {
     background-color: pink;
 }
 #button-paper{
-    display: inline-flex;
-    align-items: center;
+    text-align: center;
+
     border: 5px solid black;
     border-radius: 15px;
     width: 33%;
@@ -49,17 +51,12 @@ body {
     background-color: pink;
 }
 #button-scissors{
-    display: inline-flex;
-    align-items: center;
+    text-align: center;
+
     border: 5px solid black;
     border-radius: 15px;
     width: 33%;
 
     background-color: pink;
-}
-.select-text {
-    background-color: white;
-    text-align: center;
-    font-size: 5vh;;
 }
 
