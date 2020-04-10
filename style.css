@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Ramabhadra&display=swap');
+
 
 * {
     margin: 0;
@@ -8,7 +8,7 @@
 
 body {
     background-color: cadetblue;
-    font-family: 'Ramabhadra', sans-serif;
+    font-family: 'Baloo Paaji 2', cursive;
 
 }
 .title-div {
@@ -18,34 +18,48 @@ body {
 
 .title-div > h1 {
     text-align: center;
-    text-decoration: underline;
     font-size: 10vh;
 }
 
 
-.radio-buttons {
+.button-menu {
     width: 60%;
     font-weight: bold;
-    font-size: 8vh;
-    border: 2px solid black;
-    border-radius: 15px;
+    font-size: 4vw;
     margin: 50px auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
-
-.option-buttons {
+#button-rock{
     display: inline-flex;
     align-items: center;
-}
+    border: 5px solid black;
+    border-radius: 15px;
+    width: 33%;
 
+    background-color: pink;
+}
+#button-paper{
+    display: inline-flex;
+    align-items: center;
+    border: 5px solid black;
+    border-radius: 15px;
+    width: 33%;
+
+    background-color: pink;
+}
+#button-scissors{
+    display: inline-flex;
+    align-items: center;
+    border: 5px solid black;
+    border-radius: 15px;
+    width: 33%;
+
+    background-color: pink;
+}
 .select-text {
     background-color: white;
     text-align: center;
     font-size: 5vh;;
-}
-
-.submit-button {
-    text-align: center;
 }
 

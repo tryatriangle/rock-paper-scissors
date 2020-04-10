@@ -3,51 +3,39 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
     <title>Rock Paper Scissors</title>
     </head>
     <body>
         <div class="title-div">
-            <h1>Rock, paper, scissors.</h1>
+            <h1>A game of rock, paper, scissors.</h1>
         </div>
 
         <div class="select-text">
         <p>Select your play:</p>
         </div>
          
-                <div class="radio-buttons">
+                <div class="button-menu">
 
-                <form>
-                    
-                    <label class="option-buttons" for="rock">
-
-                    <input id="rock" value="rock" type="radio" name="userPlay">
+                    <div id="button-rock">
                     Rock
-                    </label>
+                    </div>
                     
                     
-                    <label class="option-buttons" for="paper">
 
-                    <input id="paper" value="paper" type="radio" name="userPlay" checked="checked">
+
+                    <div id="button-paper">
                     Paper 
-                    </label>
+                    </div>
                     
                     
-                    <label class="option-buttons" for="scissors">
 
-                    <input id="scissors" value="scissors" type="radio" name="userPlay"> 
+
+                    <div id="button-scissors"> 
                     Scissors
-                    </label>
+                    </div>
                     
-                </div>
-            
-        
-
-                <div class="submit-button">
-            
-                <p><button onclick="myFunction" id="submit" type="submit">Play</button></p>
-                    
-                </form>
                 </div>
 
                 <script src="app.js"></script>
