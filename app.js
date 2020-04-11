@@ -12,9 +12,31 @@ let result_div = document.querySelector(".result")
 let userScore = 0;
 let computerScore = 0;
 
-//event listeners
-
 //functions
+
+function game(userChoice){
+  console.log("poop fuck fart" + userChoice);
+}
+
+
+
+function main(){
+
+  rock_div.addEventListener("click", function() {
+    game("button-rock");
+  })
+
+  paper_div.addEventListener("click", function() {
+    game("button-paper");
+  })
+
+  scissors_div.addEventListener("click", function() {
+    game("button-scissors");
+  })
+
+}
+
+main();
 
 function computerPlay() {
 
@@ -30,8 +52,3 @@ let computerAnswer = computerPlay();
 
 console.log(computerAnswer);
 
-
-
-function playerSelection() {
-
-}
