@@ -44,6 +44,7 @@ body {
     width: 33%;
 
     background-color: pink;
+    cursor: pointer;
 }
 #button-paper{
     text-align: center;
@@ -53,6 +54,7 @@ body {
     width: 33%;
 
     background-color: pink;
+    cursor: pointer;
 }
 #button-scissors{
     text-align: center;
@@ -62,6 +64,7 @@ body {
     width: 33%;
 
     background-color: pink;
+    cursor: pointer;
 }
 .result{
     text-align: center;
