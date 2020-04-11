@@ -14,6 +14,16 @@ let computerScore = 0;
 
 //functions
 
+function getComputerChoice() {
+
+  let choices = ["rock", "paper", "scissors"];
+
+  let randomNumber = Math.floor(Math.random() * 3);
+
+  return choices[randomNumber];
+
+}
+
 function game(userChoice){
   console.log("poop fuck fart" + userChoice);
 }
@@ -38,17 +48,5 @@ function main(){
 
 main();
 
-function computerPlay() {
 
-    let computerChoice = ["rock", "paper", "scissors"];
-  
-    let randomNumber = Math.floor(Math.random() * 3);
-  
-    return computerChoice [randomNumber];
- 
-  }
-
-let computerAnswer = computerPlay();
-
-console.log(computerAnswer);
 
