@@ -25,10 +25,10 @@ function getComputerChoice() {
 }
 
 function game(userChoice){
-  console.log("poop fuck fart" + userChoice);
+  let computerChoice = getComputerChoice();
+  console.log("user choice => " + userChoice);
+  console.log("computer choice => " + computerChoice);
 }
-
-
 
 function main(){
 
