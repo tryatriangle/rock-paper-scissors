@@ -59,11 +59,21 @@ function win(userChoice, computerChoice){
   //ES6 use below
   result_p.innerHTML =`${convertToWord(userChoice)}${smallUserWord} beats ${computerChoice}${smallCompWord} - Good job!`;
 }
-function lose(){
-  console.log("LOSE!");
+function lose(userChoice, computerChoice){
+  computerScore++;
+  userScore_span.innerHTML = userScore;
+  computerScore_span.innerHTML = computerScore;
+
+  let smallUserWord = "user".fontsize(3).sup();
+  let smallCompWord = "Hal".fontsize(3).sub();
+
+  result_p.innerHTML =`${convertToWord(userChoice)}${smallUserWord} loses to ${computerChoice}${smallCompWord} - Oh no!`;
 }
-function draw(){
-  console.log("DRAW!");
+function draw(userChoice, computerChoice){
+  let smallUserWord = "user".fontsize(3).sup();
+  let smallCompWord = "Hal".fontsize(3).sub();
+
+  result_p.innerHTML =`${convertToWord(userChoice)}${smallUserWord} and ${computerChoice}${smallCompWord} - It's a draw`;
 }
 
 //compares user choice and computer choice using switch and decides winner
