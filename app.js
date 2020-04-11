@@ -15,7 +15,7 @@ let computerScore = 0;
 //functions
 
 //selects comp choice from array, uses math.floor and math.random objects to randomly choose between 0, 1 or 2 by rounding math.random result down. Then assigns 0, 1 or 2 to rock, paper or scissors.
-function getComputerChoice() {
+function getComputerChoice(){
 
   let choices = ["rock", "paper", "scissors"];
 
@@ -25,12 +25,39 @@ function getComputerChoice() {
 
 }
 
-//win, lose and draw functions
+//makes output of buttons readable to humans
+function convertToWord(letter){
+  if (letter === "button-rock") return "Rock";
+  if (letter === "button-paper") return "Paper";
+  return "Scissors";
+}
+
+/*
+win function without using ES6
+
 function win(userChoice, computerChoice){
   userScore++;
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
-  result_p.innerHTML = userChoice + " beats " + computerChoice + ". Good job!";
+  result_p.innerHTML = convertToWord(userChoice) + " beats " + computerChoice + ". Good job!";
+}
+*/
+
+/*
+win, lose and draw functions. 
+
+Using ES6 to make the combining of variables with strings more readable (it removes the need for + and "" to be used. You wrap things that aren't strings in dollar sign $ and curly braces {} )
+*/
+function win(userChoice, computerChoice){
+  userScore++;
+  userScore_span.innerHTML = userScore;
+  computerScore_span.innerHTML = computerScore;
+
+  //variables to append to result string to make it clear who chose what
+  let smallUserWord = "user".fontsize(3).sup();
+  let smallCompWord = "Hal".fontsize(3).sub();
+  //ES6 use below
+  result_p.innerHTML =`${convertToWord(userChoice)}${smallUserWord} beats ${computerChoice}${smallCompWord} - Good job!`;
 }
 function lose(){
   console.log("LOSE!");
