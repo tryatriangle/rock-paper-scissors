@@ -28,6 +28,9 @@ body {
     text-align: center;
     font-size: 5vh;
 }
+.best-text{
+    font-size: 2vh;
+}
 .button-menu {
     width: 75%;
     font-weight: bold;

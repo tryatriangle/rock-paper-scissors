@@ -11,6 +11,7 @@ let scoreBoard_div = document.querySelector(".score-board");
 let result_p = document.querySelector(".result > p")
 let userScore = 0;
 let computerScore = 0;
+let numberOfRounds = userScore + computerScore;
 
 //functions
 
@@ -59,6 +60,7 @@ function win(userChoice, computerChoice){
   //ES6 use below
   result_p.innerHTML =`${convertToWord(userChoice)}${smallUserWord} beats ${computerChoice}${smallCompWord} - well done!`;
 }
+
 function lose(userChoice, computerChoice){
   computerScore++;
   userScore_span.innerHTML = userScore;
@@ -118,5 +120,34 @@ function main(){
 
 main();
 
+//function to give results if 5 rounds have been played, then reset scores
 
+function totals (){
+
+  numberOfRounds = userScore + computerScore;
+
+  if (numberOfRounds == 5){
+    if (userScore > computerScore) {
+      result_p.innerHTML = (userScore + " vs " + computerScore + ", you win");
+    }
+
+    else {
+      result_p.innerHTML = (userScore + " vs " + computerScore + ", Hal wins");
+    }
+  }
+
+  function clearScores(){
+
+    if (numberOfRounds == 5){
+    userScore = 0;
+    computerScore = 0;
+    userScore_span.innerHTML = userScore;
+    computerScore_span.innerHTML = computerScore;
+  }}
+  setTimeout (clearScores,5000);
+}
+
+rock_div.addEventListener('click', totals);
+paper_div.addEventListener('click', totals);
+scissors_div.addEventListener('click',totals);
 
