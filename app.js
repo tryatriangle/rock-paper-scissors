@@ -81,6 +81,12 @@ function draw(userChoice, computerChoice){
 //compares user choice and computer choice using switch and decides winner
 function game(userChoice){
 
+  if (numberOfRounds > 5){
+    clearScores();
+  }
+
+  else {
+
   let computerChoice = getComputerChoice();
 
   switch (userChoice + computerChoice) {
@@ -99,8 +105,39 @@ function game(userChoice){
     case "button-scissorsscissors":
       draw(userChoice, computerChoice);
       break;
-  }
+  }}
+
+totals();
+
 }
+
+//function to give results if 5 rounds have been played, then reset scores
+
+function totals (){
+
+  numberOfRounds = userScore + computerScore;
+
+    if (numberOfRounds >= 5){
+    if (userScore > computerScore) {
+      result_p.innerHTML = (userScore + " vs " + computerScore + ", you win");
+    }
+
+    else {
+      result_p.innerHTML = (userScore + " vs " + computerScore + ", Hal wins");
+    }
+  }
+
+  setTimeout (clearScores,5000);
+}
+
+function clearScores(){
+
+  if (numberOfRounds >= 5){
+  userScore = 0;
+  computerScore = 0;
+  userScore_span.innerHTML = userScore;
+  computerScore_span.innerHTML = computerScore;
+}}
 
 function main(){
 
@@ -120,34 +157,8 @@ function main(){
 
 main();
 
-//function to give results if 5 rounds have been played, then reset scores
 
-function totals (){
 
-  numberOfRounds = userScore + computerScore;
 
-  if (numberOfRounds == 5){
-    if (userScore > computerScore) {
-      result_p.innerHTML = (userScore + " vs " + computerScore + ", you win");
-    }
 
-    else {
-      result_p.innerHTML = (userScore + " vs " + computerScore + ", Hal wins");
-    }
-  }
-
-  function clearScores(){
-
-    if (numberOfRounds == 5){
-    userScore = 0;
-    computerScore = 0;
-    userScore_span.innerHTML = userScore;
-    computerScore_span.innerHTML = computerScore;
-  }}
-  setTimeout (clearScores,5000);
-}
-
-rock_div.addEventListener('click', totals);
-paper_div.addEventListener('click', totals);
-scissors_div.addEventListener('click',totals);
 
